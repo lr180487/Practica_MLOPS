@@ -1,0 +1,28 @@
+[project]
+name = "practica-mlops-arena-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "lr180487", email = "lreynaa@undac.edu.pe" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.141.1",
+    "joblib>=1.6.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "notebook>=7.6.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "uvicorn[standard]>=0.53.0",
+]
+
+[project.scripts]
+practica-mlops-arena-ai = "practica_mlops_arena_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"

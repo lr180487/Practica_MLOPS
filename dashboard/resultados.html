@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Visor y descarga de output/resultado.json generado por procesar_datos.py." />
+  <title>Resultados · output/resultado.json · MLOps Dashboard</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232546e8'/><path d='M30 22h28l14 14v42H30z' fill='white'/><path d='M58 22v14h14' fill='%23bfd3fe'/></svg>" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232546e8'/><path d='M22 72 L42 46 L58 58 L80 28' stroke='white' stroke-width='9' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+
+  <!-- Tipografías (Google Fonts CDN): Inter para texto, JetBrains Mono para cifras -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+
+  <!-- ══════════════ Tailwind CSS vía CDN oficial (versión fijada 3.4.17) ══════════════ -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+
+  <!-- Configuración del tema (paleta corporativa, sombras, animaciones) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Segoe UI', 'ui-sans-serif', 'system-ui', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            mono: ['JetBrains Mono', 'SFMono-Regular', 'Menlo', 'Consolas', 'ui-monospace', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#eef4ff', 100: '#dbe6fe', 200: '#bfd3fe', 300: '#93b4fd', 400: '#608bfa',
+              500: '#3b63f5', 600: '#2546e8', 700: '#1d36d4', 800: '#1e2eab', 900: '#1e2d87',
+            },
+            surface: { DEFAULT: '#ffffff', muted: '#f6f8fb', ring: '#e6eaf0' },
+          },
+          boxShadow: {
+            card: '0 1px 2px rgba(16, 24, 40, .04), 0 1px 3px rgba(16, 24, 40, .06)',
+            'card-hover': '0 4px 12px rgba(16, 24, 40, .08)',
+            focus: '0 0 0 3px rgba(59, 99, 245, .25)',
+          },
+          keyframes: {
+            pulseDot: { '0%,100%': { opacity: '1', transform: 'scale(1)' }, '50%': { opacity: '.35', transform: 'scale(.75)' } },
+            flash: { '0%': { backgroundColor: 'rgba(59, 99, 245, .07)' }, '100%': { backgroundColor: 'transparent' } },
+            rise: { '0%': { opacity: '0', transform: 'translateY(6px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+          },
+          animation: { pulseDot: 'pulseDot 1.6s ease-in-out infinite', flash: 'flash 1.1s ease-out', rise: 'rise .3s ease-out' },
+        },
+      },
+    };
+  </script>
+
+  <!-- Clases de componente del dashboard (procesadas por el CDN de Tailwind: admite @layer y @apply) -->
+  <style type="text/tailwindcss">
+    @layer base {
+      :root { color-scheme: light; }
+      html { @apply antialiased scroll-smooth; }
+      body { @apply bg-surface-muted text-slate-700 font-sans text-sm; }
+      h1, h2, h3 { @apply text-slate-900 tracking-tight; }
+      code { @apply font-mono text-[0.85em] rounded bg-slate-100 px-1 py-0.5 text-slate-700; }
+      ::selection { @apply bg-brand-100 text-brand-900; }
+      input[type='range'] { accent-color: #2546e8; }
+      select, input[type='number'] { @apply focus:outline-none focus:shadow-focus focus:border-brand-400; }
+      button:focus-visible, a:focus-visible { @apply outline-none shadow-focus rounded-md; }
+    }
+
+    @layer components {
+      /* ---------- contenedores ---------- */
+      .card { @apply rounded-xl border border-surface-ring bg-surface shadow-card transition-shadow duration-200; }
+      .card:hover { @apply shadow-card-hover; }
+      .card-head { @apply flex flex-wrap items-start justify-between gap-3; }
+      .card-title { @apply text-[15px] font-semibold text-slate-900; }
+      .card-sub { @apply mt-0.5 text-xs text-slate-500; }
+
+      /* ---------- KPIs ---------- */
+      .kpi { @apply card p-4 relative overflow-hidden; }
+      .kpi::before { content: ''; @apply absolute inset-x-0 top-0 h-0.5 bg-slate-200; }
+      .kpi-emerald::before { @apply bg-emerald-500; }
+      .kpi-brand::before { @apply bg-brand-500; }
+      .kpi-violet::before { @apply bg-violet-500; }
+      .kpi-amber::before { @apply bg-amber-500; }
+      .kpi-label { @apply text-[11px] font-medium uppercase tracking-wider text-slate-500; }
+      .kpi-value { @apply mt-1 text-2xl font-semibold text-slate-900 tabular-nums; }
+      .kpi-foot { @apply mt-1 text-[11px] text-slate-400; }
+
+      /* ---------- pastillas / badges ---------- */
+      .pill { @apply inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium; }
+      .pill-neutral { @apply pill border-surface-ring bg-white text-slate-600; }
+      .pill-brand { @apply pill border-brand-200 bg-brand-50 text-brand-700 hover:bg-brand-100 transition; }
+      .badge { @apply inline-block rounded px-1.5 py-0.5 text-[10px] font-semibold leading-none; }
+      .badge-si { @apply badge bg-violet-100 text-violet-700; }
+      .badge-no { @apply badge bg-slate-100 text-slate-600; }
+      .badge-ok { @apply badge bg-emerald-100 text-emerald-700; }
+      .badge-err { @apply badge bg-rose-100 text-rose-700; }
+      .badge-origen { @apply badge bg-slate-100 text-slate-500 font-normal; }
+      .badge-origen-api { @apply badge bg-brand-50 text-brand-700 font-normal; }
+
+      /* ---------- botones ---------- */
+      .btn { @apply inline-flex items-center justify-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium transition disabled:opacity-50 disabled:cursor-not-allowed; }
+      .btn-primary { @apply btn bg-brand-600 text-white hover:bg-brand-700 shadow-sm; }
+      .btn-secondary { @apply btn border border-surface-ring bg-white text-slate-700 hover:bg-slate-50; }
+      .btn-xs { @apply rounded-md px-2.5 py-1 text-xs; }
+      .btn-emerald { @apply btn btn-xs bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100; }
+      .btn-rose { @apply btn btn-xs bg-rose-50 text-rose-700 border border-rose-200 hover:bg-rose-100; }
+
+      /* ---------- tabs segmentadas ---------- */
+      .tabs { @apply inline-flex rounded-lg border border-surface-ring bg-slate-50 p-0.5 text-xs; }
+      .tab { @apply rounded-md px-2.5 py-1 text-slate-500 transition hover:text-slate-800 whitespace-nowrap; }
+      .tab-active { @apply bg-white text-brand-700 shadow-sm font-medium; }
+
+      /* ---------- formularios ---------- */
+      .label { @apply block text-xs font-medium text-slate-500 mb-1; }
+      .select { @apply w-full rounded-lg border border-surface-ring bg-white px-3 py-2 text-sm text-slate-800; }
+      .select-sm { @apply rounded-lg border border-surface-ring bg-white px-2 py-1.5 text-xs text-slate-800; }
+      .range { @apply w-full h-1.5 cursor-pointer; }
+
+      /* ---------- tablas ---------- */
+      .table-wrap { @apply overflow-auto rounded-lg border border-surface-ring; }
+      .table { @apply w-full text-xs; }
+      .table thead { @apply sticky top-0 z-10 bg-slate-50 text-[10px] uppercase tracking-wider text-slate-500; }
+      .table th { @apply px-3 py-2 font-medium border-b border-surface-ring; }
+      .table td { @apply px-3 py-1.5 border-b border-slate-100; }
+      .table tbody tr:hover { @apply bg-brand-50/40; }
+      .row-error { @apply bg-rose-50/60; }
+
+      /* ---------- matriz de confusión ---------- */
+      .cm-cell { @apply rounded-lg border border-surface-ring p-3 text-center transition-all duration-500; }
+      .cm-cell:hover { @apply -translate-y-0.5 shadow-card-hover; }
+      .cm-tag { @apply text-[10px] font-medium uppercase tracking-wider text-slate-500; }
+      .cm-num { @apply text-2xl font-semibold text-slate-900 tabular-nums; }
+      .cm-pct { @apply text-[10px] text-slate-500; }
+      .cm-axis { @apply text-[11px] font-medium uppercase tracking-wider text-slate-500; }
+      .stat-box { @apply rounded-lg border border-surface-ring bg-slate-50 p-2 text-center; }
+      .stat-box dt { @apply text-[11px] text-slate-500; }
+      .stat-box dd { @apply font-mono text-base text-slate-900; }
+
+      /* ---------- misc ---------- */
+      .legend-axis { @apply [writing-mode:vertical-rl] rotate-180 text-[11px] text-slate-500; }
+      .scroll-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+      .scroll-thin::-webkit-scrollbar-thumb { @apply rounded-full bg-slate-300; }
+      .tooltip { @apply pointer-events-none fixed z-50 rounded-lg border border-surface-ring bg-white px-2.5 py-1.5 text-[11px] font-mono text-slate-800 shadow-card-hover; }
+      .log-view { @apply rounded-lg border border-surface-ring bg-slate-50 p-3 font-mono text-[11px] leading-relaxed text-slate-600 whitespace-pre-wrap; }
+      .log-warn { @apply text-amber-700; }
+      .log-error { @apply text-rose-700 font-medium; }
+      .drift-track { @apply relative mt-1 h-2 rounded-full bg-slate-100; }
+      .drift-mid { @apply absolute inset-y-0 left-1/2 w-px bg-slate-400; }
+      .drift-bar { @apply absolute inset-y-0 rounded-full transition-all duration-500; }
+      .alert-banner { @apply bg-rose-600 px-4 py-2 text-center text-sm text-white; }
+    }
+  </style>
+  <!-- Estilos propios de esta página -->
+  <style type="text/tailwindcss">
+    @layer components {
+      .json-view { @apply rounded-lg border border-surface-ring bg-slate-50 p-4 font-mono text-[12px] leading-relaxed text-slate-700 overflow-auto whitespace-pre; }
+      .json-key { @apply text-brand-700; }
+      .json-str { @apply text-emerald-700; }
+      .json-num { @apply text-violet-700; }
+      .json-bool { @apply text-amber-700; }
+      .json-null { @apply text-slate-400 italic; }
+      .tree-node { @apply pl-4 border-l border-slate-200; }
+      .tree-row { @apply flex items-baseline gap-2 py-0.5 text-xs font-mono; }
+      .tree-toggle { @apply cursor-pointer select-none text-slate-400 hover:text-slate-700 w-3 inline-block; }
+      .mini-bar { @apply h-2 rounded-full bg-brand-500; }
+      .nav-link { @apply text-sm font-medium text-slate-500 hover:text-slate-900 transition; }
+      .nav-link-active { @apply text-brand-700; }
+    }
+  </style>
+</head>
+
+<body class="min-h-screen">
+  <!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
+  <header class="sticky top-0 z-40 border-b border-surface-ring bg-white/95 backdrop-blur">
+    <div class="mx-auto flex max-w-[1400px] flex-wrap items-center gap-4 px-4 py-3 sm:px-6">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-brand-600 shadow-sm">
+          <svg viewBox="0 0 24 24" class="h-6 w-6 text-white" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+        </div>
+        <div>
+          <h1 class="text-lg font-semibold leading-tight">Resultados <span class="font-normal text-slate-400">· output/resultado.json</span></h1>
+          <p class="text-xs text-slate-500">Salida de <code>procesar_datos.py</code> · ingesta y validación de <code>data/datos.csv</code></p>
+        </div>
+      </a>
+      <nav class="ml-auto flex flex-wrap items-center gap-4" aria-label="Navegación">
+        <a href="index.html" class="nav-link">Dashboard</a>
+        <a href="resultados.html" class="nav-link nav-link-active" aria-current="page">Resultados</a>
+        <a href="/docs" target="_blank" rel="noopener" class="nav-link">API /docs ↗</a>
+        <a id="btn-descargar" href="/download/resultado.json" download="resultado.json" class="btn-primary">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+          Descargar JSON
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-[1400px] space-y-6 px-4 py-6 sm:px-6">
+    <div id="aviso" class="hidden alert-banner rounded-lg"></div>
+
+    <!-- KPIs -->
+    <section aria-label="Resumen" class="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
+      <div class="kpi kpi-brand"><p class="kpi-label">Filas totales</p><p class="kpi-value" id="k-filas">—</p><p class="kpi-foot" id="k-origen">—</p></div>
+      <div class="kpi kpi-emerald"><p class="kpi-label">Filas válidas</p><p class="kpi-value text-emerald-600" id="k-validas">—</p><p class="kpi-foot" id="k-validas-pct">—</p></div>
+      <div class="kpi"><p class="kpi-label">Filas inválidas</p><p class="kpi-value text-rose-600" id="k-invalidas">—</p><p class="kpi-foot">valores no numéricos</p></div>
+      <div class="kpi kpi-violet"><p class="kpi-label">Resultado SI / NO</p><p class="kpi-value" id="k-si-no">—</p><p class="kpi-foot" id="k-tasa-si">—</p></div>
+      <div class="kpi kpi-amber"><p class="kpi-label">Cultivos</p><p class="kpi-value" id="k-cultivos">—</p><p class="kpi-foot" id="k-cultivos-lista">—</p></div>
+      <div class="kpi"><p class="kpi-label">Ejecutado</p><p class="kpi-value text-lg" id="k-fecha">—</p><p class="kpi-foot" id="k-tamano">—</p></div>
+    </section>
+
+    <!-- Acciones -->
+    <section class="card p-4">
+      <div class="card-head">
+        <div>
+          <h2 class="card-title">Archivo</h2>
+          <p class="card-sub"><code>output/resultado.json</code> · fuente: <code>GET /api/data/summary</code></p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <a href="/download/resultado.json" download="resultado.json" class="btn-secondary btn-xs">⬇ resultado.json</a>
+          <a href="/download/resultado.csv" download="resultado.csv" class="btn-secondary btn-xs">⬇ resultado.csv (tabla)</a>
+          <a href="/api/data/summary" target="_blank" rel="noopener" class="btn-secondary btn-xs">Abrir JSON crudo ↗</a>
+          <button id="btn-copiar" class="btn-secondary btn-xs">📋 Copiar JSON</button>
+          <button id="btn-recargar" class="btn-secondary btn-xs">🔄 Recargar</button>
+          <button id="btn-reprocesar" class="btn-secondary btn-xs" title="Vuelve a ejecutar procesar_datos.py en el servidor">⚙️ Volver a ejecutar procesar_datos.py</button>
+          <span id="estado" class="text-xs text-slate-500"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estadísticas por variable -->
+    <section class="card p-5">
+      <div class="card-head">
+        <div>
+          <h2 class="card-title">Estadísticas por variable</h2>
+          <p class="card-sub">Válidos / inválidos, mínimo, promedio y máximo; promedio por cultivo (barra = posición del promedio dentro del rango mín–máx).</p>
+        </div>
+      </div>
+      <div class="table-wrap scroll-thin mt-4">
+        <table class="table" id="tabla-vars"><thead></thead><tbody class="font-mono text-slate-700"></tbody></table>
+      </div>
+    </section>
+
+    <!-- Distribuciones -->
+    <section class="grid grid-cols-1 gap-6 xl:grid-cols-2">
+      <div class="card p-5">
+        <h2 class="card-title">Distribución de <code>resultado</code></h2>
+        <p class="card-sub">Conteo de clases en el dataset procesado.</p>
+        <div id="dist-resultado" class="mt-4 space-y-3"></div>
+      </div>
+      <div class="card p-5">
+        <h2 class="card-title">Distribución por <code>cultivo</code></h2>
+        <p class="card-sub">Filas por cultivo y tasa de SI dentro de cada uno.</p>
+        <div id="dist-cultivo" class="mt-4 space-y-3"></div>
+      </div>
+    </section>
+
+    <!-- JSON: árbol + código -->
+    <section class="card p-5">
+      <div class="card-head">
+        <div>
+          <h2 class="card-title">Contenido completo</h2>
+          <p class="card-sub">Vista en árbol navegable o texto con resaltado de sintaxis.</p>
+        </div>
+        <div class="tabs" role="tablist">
+          <button class="tab tab-active" data-vista="arbol" role="tab">Árbol</button>
+          <button class="tab" data-vista="codigo" role="tab">JSON</button>
+        </div>
+      </div>
+      <div id="vista-arbol" class="mt-4 max-h-[560px] overflow-auto scroll-thin rounded-lg border border-surface-ring bg-white p-3"></div>
+      <pre id="vista-codigo" class="json-view mt-4 hidden max-h-[560px]"></pre>
+    </section>
+
+    <footer class="pb-4 text-center text-[11px] text-slate-400">Práctica MLOps · <a href="index.html" class="underline hover:text-slate-600">Volver al dashboard</a></footer>
+  </main>
+
+  <script src="resultados.js" defer></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

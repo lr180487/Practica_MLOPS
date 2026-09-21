@@ -1,0 +1,54 @@
+fastapi
+uvicorn[standard]
+
+numpy
+pandas
+
+scikit-learn==1.6.1
+joblib
+
+matplotlib
+seaborn
+
+jupyter
+notebook
+
+
+
+# ============================================
+# Practica_MLOPS - Dependencias
+# ============================================
+
+
+
+# Validación y esquemas
+pydantic>=2.11,<3.0
+
+# Manejo de formularios HTTP
+python-multipart>=0.0.20,<1.0
+
+# Variables de entorno
+python-dotenv>=1.1,<2.0
+
+
+# HTTP / consumo de APIs
+httpx>=0.28,<1.0
+
+# ============================================
+# Interfaz para aplicaciones ML
+# ============================================
+
+gradio>=5.0,<7.0
+
+# ============================================
+# Testing
+# ============================================
+
+pytest>=8.4,<10.0
+pytest-asyncio>=1.1,<2.0
+
+# ============================================
+# Desarrollo
+# ============================================
+
+watchfiles>=1.1,<2.0
