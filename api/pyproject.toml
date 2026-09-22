@@ -21,7 +21,7 @@ dependencies = [
 ]
 
 [project.scripts]
-practica-mlops-arena-ai = "practica_mlops_arena_ai:main"
+practica-mlops-arena-ai = "src/practica_mlops_arena_ai:main"
 
 [build-system]
 requires = ["uv_build>=0.12.17,<0.13.0"]
