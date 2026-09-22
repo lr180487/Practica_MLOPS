@@ -1,0 +1,223 @@
+{
+  "modelo": "LogisticRegression",
+  "version": "1.0.0",
+  "fecha_entrenamiento": "2026-09-22T11:43:57-05:00",
+  "sklearn_version": "1.9.1",
+  "features_numericas": [
+    "temperatura",
+    "humedad",
+    "radiacion_solar",
+    "precipitacion",
+    "viento"
+  ],
+  "feature_categorica": "cultivo",
+  "categorias_cultivo": [
+    "cafe",
+    "papa",
+    "uva"
+  ],
+  "target": "resultado",
+  "clases": [
+    "NO",
+    "SI"
+  ],
+  "n_filas": 50,
+  "n_train": 37,
+  "n_test": 13,
+  "holdout": {
+    "accuracy": 0.8462,
+    "precision": 0.6,
+    "recall": 1.0,
+    "f1": 0.75,
+    "roc_auc": 0.9,
+    "matriz_confusion": [
+      [
+        8,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "n": 13
+  },
+  "cv": {
+    "n_splits": 5,
+    "accuracy": 0.62,
+    "precision": 0.2353,
+    "recall": 0.4,
+    "f1": 0.2963,
+    "roc_auc": 0.61,
+    "matriz_confusion": [
+      [
+        27,
+        13
+      ],
+      [
+        6,
+        4
+      ]
+    ],
+    "n": 50
+  },
+  "roc_curve": {
+    "fpr": [
+      0.0,
+      0.025,
+      0.1,
+      0.1,
+      0.2,
+      0.2,
+      0.225,
+      0.225,
+      0.25,
+      0.25,
+      0.325,
+      0.325,
+      0.35,
+      0.35,
+      0.5,
+      0.5,
+      0.525,
+      0.525,
+      0.575,
+      0.575,
+      0.85,
+      0.85,
+      1.0
+    ],
+    "tpr": [
+      0.0,
+      0.0,
+      0.0,
+      0.1,
+      0.1,
+      0.2,
+      0.2,
+      0.3,
+      0.3,
+      0.4,
+      0.4,
+      0.5,
+      0.5,
+      0.6,
+      0.6,
+      0.7,
+      0.7,
+      0.8,
+      0.8,
+      0.9,
+      0.9,
+      1.0,
+      1.0
+    ]
+  },
+  "coeficientes": {
+    "temperatura": 0.6224,
+    "humedad": 0.3147,
+    "radiacion_solar": 0.4333,
+    "precipitacion": -0.237,
+    "viento": 0.1513,
+    "cultivo_cafe": 0.6507,
+    "cultivo_papa": -0.3072,
+    "cultivo_uva": -0.3434
+  },
+  "intercepto": -0.2061,
+  "medias_entrenamiento": {
+    "temperatura": 20.8189,
+    "humedad": 69.1324,
+    "radiacion_solar": 18.2973,
+    "precipitacion": 8.2216,
+    "viento": 6.7405
+  },
+  "desviaciones_entrenamiento": {
+    "temperatura": 4.1374,
+    "humedad": 14.1808,
+    "radiacion_solar": 4.915,
+    "precipitacion": 5.1202,
+    "viento": 2.8697
+  },
+  "rangos": {
+    "temperatura": [
+      10.1,
+      30.9
+    ],
+    "humedad": [
+      41.8,
+      94.9
+    ],
+    "radiacion_solar": [
+      8.1,
+      30.0
+    ],
+    "precipitacion": [
+      0.2,
+      17.6
+    ],
+    "viento": [
+      1.4,
+      14.3
+    ]
+  },
+  "matriz_correlacion": {
+    "columnas": [
+      "temperatura",
+      "humedad",
+      "radiacion_solar",
+      "precipitacion",
+      "viento",
+      "resultado_bin"
+    ],
+    "valores": [
+      [
+        1.0,
+        -0.464,
+        0.303,
+        -0.248,
+        -0.036,
+        0.249
+      ],
+      [
+        -0.464,
+        1.0,
+        -0.411,
+        0.467,
+        -0.139,
+        0.005
+      ],
+      [
+        0.303,
+        -0.411,
+        1.0,
+        -0.373,
+        -0.118,
+        0.137
+      ],
+      [
+        -0.248,
+        0.467,
+        -0.373,
+        1.0,
+        -0.045,
+        0.007
+      ],
+      [
+        -0.036,
+        -0.139,
+        -0.118,
+        -0.045,
+        1.0,
+        -0.113
+      ],
+      [
+        0.249,
+        0.005,
+        0.137,
+        0.007,
+        -0.113,
+        1.0
+      ]
+    ]
+  }
+}
