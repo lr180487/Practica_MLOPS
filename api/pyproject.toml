@@ -6,7 +6,7 @@ description = "Add your description here"
 authors = [
     { name = "lr180487", email = "lreynaa@undac.edu.pe" }
 ]
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.141.1",
     "joblib>=1.6.0",
