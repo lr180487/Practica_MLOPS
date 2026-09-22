@@ -1,0 +1,103 @@
+{
+  "fecha_ejecucion": "2026-09-21T16:28:58-05:00",
+  "archivo_origen": "datos.csv",
+  "filas_totales": 50,
+  "filas_validas": 50,
+  "filas_invalidas": 0,
+  "columnas": [
+    "id",
+    "cultivo",
+    "temperatura",
+    "humedad",
+    "radiacion_solar",
+    "precipitacion",
+    "viento",
+    "resultado"
+  ],
+  "columnas_numericas": {
+    "temperatura": {
+      "validos": 50,
+      "invalidos": 0,
+      "nulos_originales": 0,
+      "promedio": 20.62,
+      "min": 10.1,
+      "max": 30.9
+    },
+    "humedad": {
+      "validos": 50,
+      "invalidos": 0,
+      "nulos_originales": 0,
+      "promedio": 69.262,
+      "min": 41.8,
+      "max": 94.9
+    },
+    "radiacion_solar": {
+      "validos": 50,
+      "invalidos": 0,
+      "nulos_originales": 0,
+      "promedio": 18.562,
+      "min": 8.1,
+      "max": 30.0
+    },
+    "precipitacion": {
+      "validos": 50,
+      "invalidos": 0,
+      "nulos_originales": 0,
+      "promedio": 7.638,
+      "min": 0.2,
+      "max": 17.6
+    },
+    "viento": {
+      "validos": 50,
+      "invalidos": 0,
+      "nulos_originales": 0,
+      "promedio": 6.8,
+      "min": 1.4,
+      "max": 14.3
+    }
+  },
+  "promedio_general": {
+    "temperatura": 20.62,
+    "humedad": 69.262,
+    "radiacion_solar": 18.562,
+    "precipitacion": 7.638,
+    "viento": 6.8
+  },
+  "distribucion_resultado": {
+    "NO": 40,
+    "SI": 10
+  },
+  "distribucion_cultivo": {
+    "papa": 19,
+    "uva": 18,
+    "cafe": 13
+  },
+  "promedio_por_cultivo": {
+    "cafe": {
+      "temperatura": 20.685,
+      "humedad": 80.223,
+      "radiacion_solar": 16.731,
+      "precipitacion": 11.777,
+      "viento": 5.946
+    },
+    "papa": {
+      "temperatura": 17.4,
+      "humedad": 74.895,
+      "radiacion_solar": 16.363,
+      "precipitacion": 8.095,
+      "viento": 7.0
+    },
+    "uva": {
+      "temperatura": 23.972,
+      "humedad": 55.4,
+      "radiacion_solar": 22.206,
+      "precipitacion": 4.167,
+      "viento": 7.206
+    }
+  },
+  "tasa_si_por_cultivo": {
+    "cafe": 0.385,
+    "papa": 0.053,
+    "uva": 0.222
+  }
+}

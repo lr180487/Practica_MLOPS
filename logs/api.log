@@ -1,0 +1,413 @@
+2026-09-16 05:10:49,903 | INFO     | api | Modelo cargado desde /home/user/Practica_MLOPS/models/modelo.joblib
+2026-09-16 05:10:49,903 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-16T05:00:15+00:00)
+2026-09-16 05:10:49,907 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-16 05:10:50,007 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-16 05:11:06,386 | INFO     | api | predict id=cf6fc2500d6d cultivo=cafe p_si=0.560 -> SI
+2026-09-16 05:11:06,409 | INFO     | api | feedback id=cf6fc2500d6d real=SI pred=SI
+2026-09-16 05:11:08,097 | INFO     | api | simulador accion=burst intervalo=None cantidad=10
+2026-09-16 05:11:08,106 | INFO     | api | simulador accion=speed intervalo=1.0 cantidad=None
+2026-09-16 05:13:37,695 | INFO     | api | predict id=aaecc087a0d2 cultivo=papa p_si=0.209 -> NO
+2026-09-16 05:13:38,405 | INFO     | api | feedback id=aaecc087a0d2 real=SI pred=NO
+2026-09-16 05:15:06,795 | INFO     | api | Modelo cargado desde /home/user/Practica_MLOPS/models/modelo.joblib
+2026-09-16 05:15:06,795 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-16T05:00:15+00:00)
+2026-09-16 05:15:06,798 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-16 05:15:06,871 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-16 13:43:23,757 | INFO     | api | Modelo cargado desde /home/user/Practica_MLOPS/models/modelo.joblib
+2026-09-16 13:43:23,757 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-16T05:00:15+00:00)
+2026-09-16 13:43:23,773 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-16 13:43:23,910 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-16 13:44:22,265 | INFO     | api | predict id=cf4f80527471 cultivo=cafe p_si=0.481 -> NO
+2026-09-16 13:44:22,802 | INFO     | api | feedback id=cf4f80527471 real=NO pred=NO
+2026-09-16 13:44:25,034 | INFO     | api | simulador accion=stop intervalo=None cantidad=None
+2026-09-16 13:44:25,684 | INFO     | api | simulador accion=start intervalo=None cantidad=None
+2026-09-16 14:13:43,826 | INFO     | api | Modelo cargado desde /home/user/Practica_MLOPS/models/modelo.joblib
+2026-09-16 14:13:43,827 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-16T05:00:15+00:00)
+2026-09-16 14:13:43,833 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-16 14:13:43,945 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-16 14:14:08,935 | INFO     | api | predict id=e0b0f953d3fc cultivo=cafe p_si=0.617 -> SI
+2026-09-16 14:14:09,446 | INFO     | api | feedback id=e0b0f953d3fc real=SI pred=SI
+2026-09-20 19:50:16,977 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-20 19:50:17,012 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-20 19:50:17,043 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-20 19:50:17,941 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-20 20:06:22,404 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-20 20:06:22,409 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-20 20:06:22,543 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-20 20:06:23,633 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-20 21:24:39,409 | INFO     | api | predict id=9a856d5b250a cultivo=cafe p_si=0.616 -> SI
+2026-09-20 21:27:40,231 | INFO     | api | predict id=4ad979639307 cultivo=papa p_si=0.381 -> NO
+2026-09-20 21:27:41,931 | INFO     | api | predict id=ec66d57eda7a cultivo=papa p_si=0.381 -> NO
+2026-09-20 21:27:42,965 | INFO     | api | predict id=13b6e6227dc5 cultivo=papa p_si=0.381 -> NO
+2026-09-20 21:27:46,754 | INFO     | api | predict id=bde142a5ed95 cultivo=uva p_si=0.373 -> NO
+2026-09-20 21:27:48,301 | INFO     | api | predict id=d0ffe7f05b01 cultivo=uva p_si=0.373 -> NO
+2026-09-20 21:27:51,084 | INFO     | api | predict id=5ffbb2709ff4 cultivo=cafe p_si=0.616 -> SI
+2026-09-20 22:35:18,529 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-20 22:35:18,608 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-20 22:35:19,547 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-20 22:35:23,032 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-20 22:36:13,868 | INFO     | api | predict id=61efb2f1c4a4 cultivo=cafe p_si=0.616 -> SI
+2026-09-20 22:45:11,400 | INFO     | api | predict id=7ba584f4b102 cultivo=uva p_si=0.340 -> NO
+2026-09-20 22:46:09,092 | INFO     | api | simulador accion=speed intervalo=3.6 cantidad=None
+2026-09-20 22:46:11,507 | INFO     | api | simulador accion=speed intervalo=4.4 cantidad=None
+2026-09-20 22:46:12,791 | INFO     | api | simulador accion=speed intervalo=6.0 cantidad=None
+2026-09-20 22:46:13,476 | INFO     | api | simulador accion=speed intervalo=5.8 cantidad=None
+2026-09-20 22:46:33,571 | INFO     | api | predict id=d682ea05232b cultivo=uva p_si=0.340 -> NO
+2026-09-20 22:46:45,851 | INFO     | api | predict id=117f351d8ca2 cultivo=cafe p_si=0.581 -> SI
+2026-09-20 22:46:58,247 | INFO     | api | simulador accion=burst intervalo=None cantidad=25
+2026-09-20 23:09:26,906 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-20 23:09:26,908 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-20 23:09:26,926 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-20 23:09:27,792 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-20 23:13:14,469 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-20 23:13:14,489 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-20 23:13:14,669 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-20 23:13:16,468 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-20 23:36:44,928 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-20 23:36:44,939 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-20 23:36:45,029 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-20 23:36:46,752 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-20 23:37:03,073 | INFO     | api | predict id=fde4729db766 cultivo=cafe p_si=0.616 -> SI
+2026-09-20 23:37:13,827 | INFO     | api | predict id=0cd7714a07f1 cultivo=uva p_si=0.532 -> SI
+2026-09-20 23:43:12,669 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-20 23:43:12,704 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-20 23:43:12,788 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-20 23:43:14,035 | INFO     | api | Tarea del simulador creada.
+2026-09-20 23:43:14,042 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 08:31:40,857 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 08:31:40,875 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 08:31:41,158 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 08:31:41,997 | INFO     | api | Tarea del simulador creada.
+2026-09-21 08:31:41,998 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 08:31:42,129 | INFO     | api | Deteniendo tarea del simulador...
+2026-09-21 08:31:42,130 | INFO     | api | Tarea del simulador cancelada correctamente.
+2026-09-21 08:31:42,130 | INFO     | api | FastAPI shutdown completado correctamente.
+2026-09-21 08:31:53,059 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 08:31:53,060 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 08:31:53,071 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 08:31:53,539 | INFO     | api | Tarea del simulador creada.
+2026-09-21 08:31:53,540 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 08:41:08,303 | INFO     | api | predict id=e587e83872ac cultivo=cafe p_si=0.616 -> SI
+2026-09-21 08:49:40,041 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 08:49:40,046 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 08:49:40,086 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 08:49:40,891 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 08:50:05,045 | INFO     | api | predict id=363d06a03e4c cultivo=cafe p_si=0.616 -> SI
+2026-09-21 08:50:42,113 | INFO     | api | predict id=e5a91bcdbb9e cultivo=cafe p_si=0.616 -> SI
+2026-09-21 08:58:12,763 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 08:58:12,765 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 08:58:12,780 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 08:58:13,376 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 08:58:26,269 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 08:58:26,271 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 08:58:26,291 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 08:58:26,943 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 08:58:41,106 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 08:58:41,108 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 08:58:41,129 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 08:58:41,808 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 12:39:11,063 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 12:39:11,077 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 12:39:11,151 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 12:39:11,906 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 12:42:42,283 | INFO     | api | predict id=0eb9fc991f6b cultivo=cafe p_si=0.616 -> SI
+2026-09-21 12:42:45,059 | INFO     | api | predict id=23f7944cc801 cultivo=cafe p_si=0.616 -> SI
+2026-09-21 12:42:47,759 | INFO     | api | predict id=880c574d2a14 cultivo=cafe p_si=0.616 -> SI
+2026-09-21 12:42:48,870 | INFO     | api | predict id=d3961f108de0 cultivo=cafe p_si=0.616 -> SI
+2026-09-21 12:42:49,447 | INFO     | api | predict id=1ef31d39ac3d cultivo=cafe p_si=0.616 -> SI
+2026-09-21 12:42:52,574 | INFO     | api | predict id=7b51cccf1f27 cultivo=papa p_si=0.641 -> SI
+2026-09-21 12:42:54,852 | INFO     | api | predict id=0dabee2ea7ad cultivo=uva p_si=0.467 -> NO
+2026-09-21 12:42:56,903 | INFO     | api | predict id=747546adbe57 cultivo=papa p_si=0.181 -> NO
+2026-09-21 12:43:01,996 | INFO     | api | predict id=b4ca5b2984f6 cultivo=cafe p_si=0.365 -> NO
+2026-09-21 12:43:03,923 | INFO     | api | predict id=e681dbc15d3c cultivo=cafe p_si=0.365 -> NO
+2026-09-21 12:43:05,711 | INFO     | api | predict id=5ad30c334cf8 cultivo=cafe p_si=0.617 -> SI
+2026-09-21 12:43:09,814 | INFO     | api | predict id=d66d4963906b cultivo=cafe p_si=0.617 -> SI
+2026-09-21 12:43:12,200 | INFO     | api | predict id=470c576779ad cultivo=papa p_si=0.157 -> NO
+2026-09-21 12:43:36,762 | INFO     | api | reprocess exit=0
+2026-09-21 14:46:20,166 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 14:51:22,931 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 14:51:23,268 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 14:51:24,735 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 14:51:51,676 | INFO     | api | reprocess exit=0
+2026-09-21 15:24:16,893 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:24:16,895 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:24:16,910 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:24:17,658 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:25:29,145 | INFO     | api | predict id=a3b85a37fe89 cultivo=cafe p_si=0.616 -> SI
+2026-09-21 15:25:43,297 | INFO     | api | reprocess exit=0
+2026-09-21 15:31:11,366 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:31:11,368 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:31:11,380 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:31:11,837 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:33:29,793 | INFO     | api | simulador accion=speed intervalo=6.0 cantidad=None
+2026-09-21 15:33:40,207 | INFO     | api | predict id=a13376e051f7 cultivo=cafe p_si=0.616 -> SI
+2026-09-21 15:34:24,344 | INFO     | api | reprocess exit=0
+2026-09-21 15:34:33,644 | INFO     | api | reprocess exit=0
+2026-09-21 15:35:41,430 | INFO     | api | reprocess exit=0
+2026-09-21 15:47:57,888 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:47:57,893 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:47:57,956 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:47:58,782 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:48:07,883 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:48:07,891 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:48:07,910 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:48:08,465 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:50:29,731 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:50:29,733 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:50:29,749 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:50:30,492 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:50:36,503 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:50:36,504 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:50:36,526 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:50:36,894 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:50:51,346 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:50:51,348 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:50:51,374 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:50:52,023 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:50:58,414 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:50:58,417 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:50:58,429 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:50:59,020 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:51:23,437 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:51:23,505 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:51:23,554 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:51:24,238 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:52:13,632 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:52:13,633 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:52:13,645 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:52:14,068 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:52:21,912 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:52:21,914 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:52:21,927 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:52:22,420 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:52:28,974 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:52:28,976 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:52:28,996 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:52:29,691 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:52:36,018 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:52:36,021 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:52:36,030 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:52:36,402 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:52:46,178 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:52:46,180 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:52:46,194 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:52:46,754 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:52:53,722 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:52:53,724 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:52:53,736 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:52:54,310 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:53:22,765 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:53:22,767 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:53:22,788 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:53:23,467 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:53:31,034 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:53:31,042 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:53:31,059 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:53:32,013 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:53:38,826 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:53:38,827 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:53:38,837 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:53:39,248 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:53:59,122 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:53:59,124 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:53:59,136 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:53:59,526 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:54:30,699 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:54:30,704 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:54:30,714 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:54:31,190 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:54:44,351 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:54:44,353 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:54:44,367 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:54:45,071 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:54:52,612 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:54:52,615 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:54:52,625 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:54:53,871 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:55:17,099 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:55:17,101 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:55:17,117 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:55:17,792 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:55:52,487 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:55:52,489 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:55:52,504 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:55:53,128 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:56:03,526 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:56:03,528 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:56:03,543 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:56:04,186 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:56:12,015 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:56:12,016 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:56:12,031 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:56:12,832 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:56:20,023 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:56:20,024 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:56:20,033 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:56:20,448 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:56:27,490 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:56:27,492 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:56:27,505 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:56:27,922 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:56:45,889 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:56:45,890 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:56:45,902 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:56:46,593 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:57:03,290 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:57:03,294 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:57:03,310 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:57:03,947 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:57:12,074 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:57:12,076 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:57:12,087 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:57:12,751 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:57:20,171 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:57:20,172 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:57:20,180 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:57:20,577 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:57:28,256 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:57:28,258 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:57:28,288 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:57:28,946 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:57:41,729 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:57:41,731 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:57:41,740 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:57:42,356 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:57:51,080 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:57:51,081 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:57:51,089 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:57:51,483 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:58:25,242 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:58:25,244 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:58:25,258 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:58:25,939 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:58:33,171 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:58:33,172 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:58:33,185 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:58:33,611 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:58:40,656 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:58:40,668 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:58:40,716 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:58:41,355 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:58:53,008 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:58:53,009 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:58:53,018 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:58:53,473 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:59:03,054 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:59:03,056 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:59:03,074 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:59:03,563 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:59:11,629 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:59:11,631 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:59:11,648 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:59:12,270 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:59:18,871 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:59:18,872 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:59:18,888 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:59:19,426 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:59:40,953 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:59:40,955 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:59:40,982 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:59:41,696 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:59:49,303 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:59:49,306 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:59:49,315 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:59:49,886 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 15:59:57,073 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 15:59:57,075 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 15:59:57,094 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 15:59:57,590 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:00:17,419 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:00:17,420 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:00:17,435 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:00:17,935 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:00:24,448 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:00:24,457 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:00:24,476 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:00:25,412 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:00:40,379 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:00:40,380 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:00:40,396 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:00:40,786 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:00:47,846 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:00:47,848 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:00:47,865 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:00:48,468 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:01:00,948 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:01:00,953 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:01:00,961 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:01:01,487 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:01:23,347 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:01:23,348 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:01:23,358 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:01:23,921 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:01:31,757 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:01:31,761 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:01:31,770 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:01:32,155 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:01:49,787 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:01:49,789 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:01:49,809 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:01:50,543 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:02:01,627 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:02:01,628 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:02:01,644 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:02:02,233 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:02:09,157 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:02:09,159 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:02:09,169 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:02:09,838 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:02:17,769 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:02:17,770 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:02:17,781 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:02:18,226 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:02:32,653 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:02:32,658 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:02:32,682 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:02:33,587 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:03:17,768 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:03:17,771 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:03:17,786 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:03:18,511 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:03:25,581 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:03:25,583 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:03:25,597 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:03:26,036 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:03:34,261 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:03:34,267 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:03:34,283 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:03:34,877 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:03:41,393 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:03:41,394 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:03:41,409 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:03:42,010 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:04:08,023 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:04:08,024 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:04:08,033 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:04:08,434 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:04:16,145 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:04:16,147 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:04:16,160 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:04:16,780 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:04:28,486 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:04:28,496 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:04:28,533 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:04:29,123 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:04:36,249 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:04:36,251 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:04:36,266 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:04:37,055 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:04:53,067 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:04:53,069 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:04:53,078 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:04:53,485 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:05:00,000 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:05:00,001 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:05:00,015 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:05:00,601 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:05:14,293 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 16:05:14,295 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 16:05:14,310 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 16:05:14,827 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 16:27:56,714 | INFO     | api | reprocess exit=0
+2026-09-21 16:28:23,895 | INFO     | api | predict id=f0c4291ec28e cultivo=cafe p_si=0.616 -> SI
+2026-09-21 16:28:34,865 | INFO     | api | simulador accion=speed intervalo=6.0 cantidad=None
+2026-09-21 16:28:58,429 | INFO     | api | reprocess exit=0
