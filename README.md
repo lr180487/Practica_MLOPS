@@ -233,4 +233,5 @@ varianza: el dashboard muestra precisamente cómo se comportan en "producción".
    `models/modelo.joblib` y `models/metricas.json`.
 3. Haz `git add models/ output/resultado.json && git commit && git push` para versionar el artefacto.
 #   P r a c t i c a _ M L O P S  
+ #   P r a c t i c a _ M L O P S  
  
