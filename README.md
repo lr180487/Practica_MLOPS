@@ -232,3 +232,5 @@ varianza: el dashboard muestra precisamente cómo se comportan en "producción".
 2. Ejecuta `notebooks/entrenamiento.ipynb`; detecta automáticamente la raíz y guarda
    `models/modelo.joblib` y `models/metricas.json`.
 3. Haz `git add models/ output/resultado.json && git commit && git push` para versionar el artefacto.
+#   P r a c t i c a _ M L O P S  
+ 
