@@ -61,3 +61,10 @@
 2026-09-21 16:28:58,215 | INFO     | Resultado guardado en C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\output\resultado.json
 2026-09-21 16:28:58,215 | INFO     | Resumen: 50 filas | 50 válidas | 0 inválidas | resultado={'NO': 40, 'SI': 10}
 2026-09-21 16:28:58,215 | INFO     | Procesamiento finalizado con éxito
+2026-09-21 22:02:23,700 | INFO     | ============================================================
+2026-09-21 22:02:23,702 | INFO     | Inicio del procesamiento de datos
+2026-09-21 22:02:23,710 | INFO     | Dataset leído: datos.csv (50 filas, 8 columnas)
+2026-09-21 22:02:23,711 | INFO     | Esquema validado correctamente (8 columnas requeridas)
+2026-09-21 22:02:23,778 | INFO     | Resultado guardado en C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\output\resultado.json
+2026-09-21 22:02:23,778 | INFO     | Resumen: 50 filas | 50 válidas | 0 inválidas | resultado={'NO': 40, 'SI': 10}
+2026-09-21 22:02:23,778 | INFO     | Procesamiento finalizado con éxito

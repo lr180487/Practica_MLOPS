@@ -411,3 +411,8 @@
 2026-09-21 16:28:23,895 | INFO     | api | predict id=f0c4291ec28e cultivo=cafe p_si=0.616 -> SI
 2026-09-21 16:28:34,865 | INFO     | api | simulador accion=speed intervalo=6.0 cantidad=None
 2026-09-21 16:28:58,429 | INFO     | api | reprocess exit=0
+2026-09-21 22:00:44,098 | INFO     | api | Modelo cargado desde C:\Users\lreyn\Downloads\Practica_MLOPS_arena_ai\models\modelo.joblib
+2026-09-21 22:00:44,102 | INFO     | api | Métricas de entrenamiento cargadas (2026-09-20T19:22:43-05:00)
+2026-09-21 22:00:44,184 | INFO     | api | Dataset de referencia cargado: 50 filas
+2026-09-21 22:00:46,042 | INFO     | api | Simulador de tráfico iniciado (intervalo=2.0s)
+2026-09-21 22:02:24,035 | INFO     | api | reprocess exit=0
