@@ -1,0 +1,6 @@
+﻿variable,validos,invalidos,nulos_originales,promedio,mediana,desviacion,min,max,promedio_cafe_chanchamayo,promedio_papa_huancayo,promedio_uva_ica
+temperatura,1000,0,0,20.67,20.6,4.189,7.5,33.5,20.731,17.454,24.021
+humedad,1000,0,0,68.69,70.05,14.376,24.7,100.0,80.42,73.77,54.855
+radiacion_solar,1000,0,0,18.532,18.2,4.609,3.2,30.9,16.763,16.23,22.24
+precipitacion,1000,0,0,7.703,7.0,4.902,0.0,26.0,11.765,8.204,4.242
+viento,1000,0,0,6.802,6.6,3.28,0.0,19.5,5.693,7.119,7.269

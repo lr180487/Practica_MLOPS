@@ -1,0 +1,8 @@
+﻿id,timestamp,prediction_id,cultivo,ciudad,probabilidad_si,prediccion,etiqueta_real,acierto,origen,comentario
+f0ba7facc039,2026-09-26T00:49:56+00:00,ea05e87659e0,cafe,chanchamayo,0.6165,SI,SI,True,api,
+3aba917fab69,2026-10-02T16:52:22+00:00,dc14a4e39496,cafe,chanchamayo,0.6606,SI,SI,True,api,
+492eb8bfa979,2026-10-19T05:19:44+00:00,601cefa54ec8,cafe,chanchamayo,0.4818,NO,SI,False,api,
+361792ffd332,2026-10-19T05:20:33+00:00,aacd0341057d,papa,huancayo,0.0838,NO,SI,False,api,
+5ab5a583b9a5,2026-10-19T05:26:35+00:00,77f59f5ab349,papa,huancayo,0.1997,NO,SI,False,api,
+98500ff9f56d,2026-10-19T05:29:11+00:00,010d1e8c4e15,papa,huancayo,0.113,NO,NO,True,api,
+fc59bb58e2e4,2026-10-19T05:29:41+00:00,a674240895ef,cafe,chanchamayo,0.5127,SI,NO,False,api,

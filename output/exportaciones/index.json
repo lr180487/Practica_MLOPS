@@ -1,0 +1,247 @@
+{
+  "generado": "2026-10-24 00:37:17 UTC",
+  "backend": "sqlite",
+  "carpeta": "output\\exportaciones",
+  "tablas": [
+    {
+      "clave": "datos",
+      "titulo": "Dataset de entrada",
+      "descripcion": "Observaciones agroclimáticas por cultivo y ciudad con la etiqueta resultado (SI/NO).",
+      "fuente": "data/datos.csv",
+      "filas": 1000,
+      "columnas": [
+        "id",
+        "cultivo",
+        "ciudad",
+        "temperatura",
+        "humedad",
+        "radiacion_solar",
+        "precipitacion",
+        "viento",
+        "resultado"
+      ],
+      "error": null
+    },
+    {
+      "clave": "predicciones",
+      "titulo": "Predicciones persistidas",
+      "descripcion": "Todas las predicciones realizadas (dashboard, simulador y lotes) con el resultado real cuando se registró.",
+      "fuente": "tabla predictions",
+      "filas": 3247,
+      "columnas": [
+        "id",
+        "timestamp",
+        "origen",
+        "cultivo",
+        "ciudad",
+        "temperatura",
+        "humedad",
+        "radiacion_solar",
+        "precipitacion",
+        "viento",
+        "probabilidad_si",
+        "prediccion",
+        "umbral",
+        "etiqueta_real",
+        "acierto",
+        "latencia_ms",
+        "modelo_version",
+        "cache_hit"
+      ],
+      "error": null
+    },
+    {
+      "clave": "feedback",
+      "titulo": "Feedback registrado",
+      "descripcion": "Etiquetas reales enviadas por los usuarios y si la predicción acertó.",
+      "fuente": "tabla feedback",
+      "filas": 7,
+      "columnas": [
+        "id",
+        "timestamp",
+        "prediction_id",
+        "cultivo",
+        "ciudad",
+        "probabilidad_si",
+        "prediccion",
+        "etiqueta_real",
+        "acierto",
+        "origen",
+        "comentario"
+      ],
+      "error": null
+    },
+    {
+      "clave": "resultado",
+      "titulo": "Estadísticas por variable",
+      "descripcion": "Resumen del procesamiento de datos: válidos, inválidos, mínimo, promedio, máximo y promedio por cultivo (con su ciudad).",
+      "fuente": "output/resultado.json",
+      "filas": 5,
+      "columnas": [
+        "variable",
+        "validos",
+        "invalidos",
+        "nulos_originales",
+        "promedio",
+        "mediana",
+        "desviacion",
+        "min",
+        "max",
+        "promedio_cafe_chanchamayo",
+        "promedio_papa_huancayo",
+        "promedio_uva_ica"
+      ],
+      "error": null
+    }
+  ],
+  "total_filas": 4259,
+  "archivos": [
+    {
+      "archivo": "datos.csv",
+      "tabla": "datos",
+      "formato": "csv",
+      "bytes": 44042,
+      "media_type": "text/csv; charset=utf-8"
+    },
+    {
+      "archivo": "datos.xlsx",
+      "tabla": "datos",
+      "formato": "xlsx",
+      "bytes": 49352,
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "archivo": "datos.pdf",
+      "tabla": "datos",
+      "formato": "pdf",
+      "bytes": 103796,
+      "media_type": "application/pdf"
+    },
+    {
+      "archivo": "datos.json",
+      "tabla": "datos",
+      "formato": "json",
+      "bytes": 204955,
+      "media_type": "application/json; charset=utf-8"
+    },
+    {
+      "archivo": "predicciones.csv",
+      "tabla": "predicciones",
+      "formato": "csv",
+      "bytes": 423729,
+      "media_type": "text/csv; charset=utf-8"
+    },
+    {
+      "archivo": "predicciones.xlsx",
+      "tabla": "predicciones",
+      "formato": "xlsx",
+      "bytes": 325082,
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "archivo": "predicciones.pdf",
+      "tabla": "predicciones",
+      "formato": "pdf",
+      "bytes": 375203,
+      "media_type": "application/pdf"
+    },
+    {
+      "archivo": "predicciones.json",
+      "tabla": "predicciones",
+      "formato": "json",
+      "bytes": 1507903,
+      "media_type": "application/json; charset=utf-8"
+    },
+    {
+      "archivo": "feedback.csv",
+      "tabla": "feedback",
+      "formato": "csv",
+      "bytes": 758,
+      "media_type": "text/csv; charset=utf-8"
+    },
+    {
+      "archivo": "feedback.xlsx",
+      "tabla": "feedback",
+      "formato": "xlsx",
+      "bytes": 6653,
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "archivo": "feedback.pdf",
+      "tabla": "feedback",
+      "formato": "pdf",
+      "bytes": 3191,
+      "media_type": "application/pdf"
+    },
+    {
+      "archivo": "feedback.json",
+      "tabla": "feedback",
+      "formato": "json",
+      "bytes": 2138,
+      "media_type": "application/json; charset=utf-8"
+    },
+    {
+      "archivo": "resultado.csv",
+      "tabla": "resultado",
+      "formato": "csv",
+      "bytes": 485,
+      "media_type": "text/csv; charset=utf-8"
+    },
+    {
+      "archivo": "resultado.xlsx",
+      "tabla": "resultado",
+      "formato": "xlsx",
+      "bytes": 6510,
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "archivo": "resultado.pdf",
+      "tabla": "resultado",
+      "formato": "pdf",
+      "bytes": 3099,
+      "media_type": "application/pdf"
+    },
+    {
+      "archivo": "resultado.json",
+      "tabla": "resultado",
+      "formato": "json",
+      "bytes": 1532,
+      "media_type": "application/json; charset=utf-8"
+    },
+    {
+      "archivo": "base_datos.xlsx",
+      "tabla": "base_datos",
+      "formato": "xlsx",
+      "bytes": 371890,
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "archivo": "base_datos.pdf",
+      "tabla": "base_datos",
+      "formato": "pdf",
+      "bytes": 121946,
+      "media_type": "application/pdf"
+    },
+    {
+      "archivo": "base_datos.zip",
+      "tabla": "base_datos",
+      "formato": "zip",
+      "bytes": 124318,
+      "media_type": "application/zip"
+    },
+    {
+      "archivo": "base_datos.sqlite",
+      "tabla": "base_datos",
+      "formato": "sqlite",
+      "bytes": 880640,
+      "media_type": "application/vnd.sqlite3"
+    },
+    {
+      "archivo": "base_datos.json",
+      "tabla": "base_datos",
+      "formato": "json",
+      "bytes": 2089150,
+      "media_type": "application/json; charset=utf-8"
+    }
+  ]
+}
