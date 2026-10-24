@@ -1,0 +1,75 @@
+# Secretos y configuración local
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+secrets/
+secrets.*
+credentials.json
+service-account*.json
+
+# Python / entornos virtuales
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Logs y temporales
+logs/
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Datos operativos, base de datos y archivos WAL/SHM
+storage/
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+*.db-journal
+
+# Salidas generadas / exportaciones
+output/exportaciones/
+output/*.csv
+output/*.xlsx
+output/*.pdf
+output/*.json
+!output/.gitkeep
+flagged/
+.gradio/
+
+# Cachés / artefactos de experimentos
+.cache/
+.cache-*/
+mlruns/
+wandb/
+artifacts/
+*.pkl
+*.pickle
+# Conservar artefactos ML explícitamente versionados del proyecto:
+!models/modelo.joblib
+!models/metricas.json
+
+# IDE / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
